@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let f0 = 0;
+    let f1 = 1;
+
+    function isFibonacci(x) {
+        if (x < 0){
+            return false;
+        } else if (x == 0) {
+            return true;
+        } else {
+            let f = 1;
+            while (f < x){
+                f = f0 + f1;
+                f0 = f1;
+                f1 = f;
+                if (f == x){
+                    return true;
+                }
+            }
+            return false
+        }
+    }
+    let x = prompt("nhập số nguyên x");
+    isFibonacci(x)?alert(x + " là số Fibonacci"): alert(x + " không phải là số Fibonacci");
+</script>

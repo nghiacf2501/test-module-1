@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function tryRemoteFromArray(arr, x) {
+        let newArr = [];
+        for (let i = 0; i < arr.length; i++){
+            if (arr[i] != x){
+                newArr.push(arr[i]);
+            }
+        }
+        return newArr
+    }
+    let str = prompt("nhập chuỗi các số nguyên cách nhau bằng dấu (,)");
+    let myArr = str.split(",");
+    let x = prompt("nhập số nguyên x : ");
+    alert(tryRemoteFromArray(myArr,x));
+</script>

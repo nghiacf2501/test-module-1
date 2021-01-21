@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let str = prompt("nhập chuỗi điểm cách nhau bằng dấu (,)")
+    let myArr = str.split(",")
+
+    function finxMax(arr) {
+        let max = parseFloat(arr [0]);
+        for (let i = 0; i < arr.length; i++){
+            if (parseFloat(arr[i])>max){
+                max = parseFloat(arr[i]);
+            }
+        }
+        return max;
+    }
+    document.write(finxMax(myArr));
+</script>
